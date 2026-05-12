@@ -18,7 +18,7 @@ Opção 4 – Sair: encerra o programa.
 
 ## Explicação das Decisões Aplicadas no Algoritmo:
 
-Matriz 10x4: cada linha representa um funcionário e cada coluna representa uma informação (nome, cargo, salário, data de admissão). Todos os campos são do tipo Caractere para simplificar o armazenamento uniforme na matriz.
+4 vetores: cada linha representa um funcionário e cada coluna representa uma informação (nome, cargo, salário, data de admissão). Todos os campos são do tipo Caractere para simplificar o armazenamento uniforme na matriz.
 
 Variável (total): controla quantos funcionários foram cadastrados, evitando ultrapassar o limite de 10 e garantindo que a pesquisa e listagem percorram apenas posições preenchidas.
 
