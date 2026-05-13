@@ -22,6 +22,6 @@ Opção 4 – Sair: encerra o programa.
 
 Variável (total): controla quantos funcionários foram cadastrados, evitando ultrapassar o limite de 10 e garantindo que a pesquisa e listagem leiam apenas posições preenchidas.
 
-Estrutura (Repita...Ate): mantém o menu em loop até o usuário escolher a opção 4.
+Estrutura: Começa com a variavel VALOR 0
 
 Variável (encontrado): flag lógica usada na pesquisa para identificar se algum resultado foi localizado e exibir a mensagem correta ao final.
