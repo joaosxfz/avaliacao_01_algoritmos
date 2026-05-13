@@ -1,11 +1,11 @@
 ```bash
-algoritmo "SistemaCadastroFuncionarios"
+algoritmo "Sisteminha"
 Var
   nomes: Vetor[1..10] de Caractere
   cargos: Vetor[1..10] de Caractere
   salarios: Vetor[1..10] de Caractere
   admissoes: Vetor[1..10] de Caractere
-  i: Inteiro
+  ok: Inteiro
   total: Inteiro
   opcao: Inteiro
   busca: Caractere
@@ -14,7 +14,7 @@ Var
 inicio
   total <- 0
 
-  Repita
+  
     Escreval("")
     Escreval("== MENU ==")
     Escreval("1 - Cadastrar funcionario")
@@ -54,12 +54,12 @@ inicio
         Leia(busca)
 
         encontrado <- Falso
-        Para i de 1 ate total faca
-          Se nomes[i] = busca Entao
+        Para ok de 1 ate total faca
+          Se nomes[ok] = busca Entao
 
-            Escreval("Nome:  ", nomes[i])
-            Escreval("Cargo: ", cargos[i])
-            
+            Escreval("Nome:  ", nomes[ok])
+            Escreval("Cargo: ", cargos[ok])
+
             encontrado <- Verdadeiro
           FimSe
         FimPara
@@ -78,12 +78,12 @@ inicio
       Se total = 0 Entao
         Escreval("Nenhum funcionario cadastrado.")
       Senao
-        Para i de 1 ate total faca
+        Para ok de 1 ate total faca
           Escreval("---")
-          Escreval("Nome:     ", nomes[i])
-          Escreval("Cargo:    ", cargos[i])
-          Escreval("Salario:  ", salarios[i])
-          Escreval("Admissao: ", admissoes[i])
+          Escreval("Nome:     ", nomes[ok])
+          Escreval("Cargo:    ", cargos[ok])
+          Escreval("Salario:  ", salarios[ok])
+          Escreval("Admissao: ", admissoes[ok])
         FimPara
 
       FimSe
@@ -97,7 +97,6 @@ inicio
       Escreval("Opcao invalida.")
     FimSe
 
-  Ate opcao = 4
 
 
 
@@ -105,5 +104,7 @@ inicio
 
 
 fimalgoritmo
+
+
 
 ```
